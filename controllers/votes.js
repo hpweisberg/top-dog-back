@@ -20,7 +20,7 @@ async function castVote(req, res){
 
     const profile = await Profile.findByPk(
       req.body.profileId,
-      { include: [{ model: Vote, as: 'votesRecieved' }] }
+      { include: [{ model: Vote, as: 'votesReceived' }] }
     )
 
     res.status(200).json(profile)
