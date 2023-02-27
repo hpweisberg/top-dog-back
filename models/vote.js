@@ -18,7 +18,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.INTEGER,
       validate: {
         min: 0,
-        max: 5,
+				max: 5,
       },
     },
     profileId: {

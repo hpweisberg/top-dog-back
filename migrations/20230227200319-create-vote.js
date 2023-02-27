@@ -11,7 +11,7 @@ module.exports = {
       },
       value: {
         type: Sequelize.INTEGER,
-        validator: {
+        validate: {
           min: 0,
           max: 5,
         },
@@ -21,7 +21,7 @@ module.exports = {
         allowNull: false,
         onDelete: 'CASCADE',
         references: {
-          module: 'Profiles',
+          model: 'Profiles',
           key: 'id',
         },
       },
