@@ -4,7 +4,7 @@ const cloudinary = require('cloudinary').v2
 async function index(req, res) {
   try {
     const profiles = await Profile.findAll({
-      include: [{ model: Vote, as: "votesReceived" }],
+      include: [{ model: Vote, as: 'votesReceived' }],
     })
     res.status(200).json(profiles)
   } catch (error) {

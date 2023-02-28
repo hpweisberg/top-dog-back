@@ -18,7 +18,6 @@ module.exports = (sequelize, DataTypes) => {
         as: 'votesReceived',
         foreignKey: 'profileId',
       })
-      
     }
   }
 
